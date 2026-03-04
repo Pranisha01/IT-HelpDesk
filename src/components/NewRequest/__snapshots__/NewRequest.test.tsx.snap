@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`NewRequest snapshot for NewRequest 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="p-4 sm:p-6 max-w-full md:max-w-2xl mx-auto bg-blue-50 min-h-screen flex items-center justify-center"
+      >
+        <div
+          class="w-full bg-white shadow rounded-md p-4 sm:p-6"
+        >
+          <h1
+            class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-blue-800 text-center"
+          >
+            Create New Request
+          </h1>
+          <form
+            class="space-y-3 sm:space-y-4"
+          >
+            <div>
+              <label
+                class="block text-xs sm:text-sm font-medium mb-1"
+              >
+                Title *
+              </label>
+              <input
+                class="w-full border px-3 py-2 rounded-md text-sm"
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <label
+                class="block text-xs sm:text-sm font-medium mb-1"
+              >
+                Requester *
+              </label>
+              <input
+                class="w-full border px-3 py-2 rounded-md text-sm"
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <label
+                class="block text-xs sm:text-sm font-medium mb-1"
+              >
+                Priority *
+              </label>
+              <select
+                class="w-full border px-3 py-2 rounded-md text-sm"
+              >
+                <option>
+                  Low
+                </option>
+                <option>
+                  Medium
+                </option>
+                <option>
+                  High
+                </option>
+                <option>
+                  Urgent
+                </option>
+              </select>
+            </div>
+            <div>
+              <label
+                class="block text-xs sm:text-sm font-medium mb-1"
+              >
+                Category *
+              </label>
+              <select
+                class="w-full border px-3 py-2 rounded-md text-sm"
+              >
+                <option>
+                  Hardware
+                </option>
+                <option>
+                  Software
+                </option>
+                <option>
+                  Network
+                </option>
+                <option>
+                  Access
+                </option>
+              </select>
+            </div>
+            <div>
+              <label
+                class="block text-xs sm:text-sm font-medium mb-1"
+              >
+                Description *
+              </label>
+              <textarea
+                class="w-full border px-3 py-2 rounded-md text-sm"
+                rows="4"
+              />
+            </div>
+            <button
+              class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition disabled:bg-gray-400 text-sm sm:text-base"
+              type="submit"
+            >
+              Create Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="p-4 sm:p-6 max-w-full md:max-w-2xl mx-auto bg-blue-50 min-h-screen flex items-center justify-center"
+    >
+      <div
+        class="w-full bg-white shadow rounded-md p-4 sm:p-6"
+      >
+        <h1
+          class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-blue-800 text-center"
+        >
+          Create New Request
+        </h1>
+        <form
+          class="space-y-3 sm:space-y-4"
+        >
+          <div>
+            <label
+              class="block text-xs sm:text-sm font-medium mb-1"
+            >
+              Title *
+            </label>
+            <input
+              class="w-full border px-3 py-2 rounded-md text-sm"
+              type="text"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="block text-xs sm:text-sm font-medium mb-1"
+            >
+              Requester *
+            </label>
+            <input
+              class="w-full border px-3 py-2 rounded-md text-sm"
+              type="text"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="block text-xs sm:text-sm font-medium mb-1"
+            >
+              Priority *
+            </label>
+            <select
+              class="w-full border px-3 py-2 rounded-md text-sm"
+            >
+              <option>
+                Low
+              </option>
+              <option>
+                Medium
+              </option>
+              <option>
+                High
+              </option>
+              <option>
+                Urgent
+              </option>
+            </select>
+          </div>
+          <div>
+            <label
+              class="block text-xs sm:text-sm font-medium mb-1"
+            >
+              Category *
+            </label>
+            <select
+              class="w-full border px-3 py-2 rounded-md text-sm"
+            >
+              <option>
+                Hardware
+              </option>
+              <option>
+                Software
+              </option>
+              <option>
+                Network
+              </option>
+              <option>
+                Access
+              </option>
+            </select>
+          </div>
+          <div>
+            <label
+              class="block text-xs sm:text-sm font-medium mb-1"
+            >
+              Description *
+            </label>
+            <textarea
+              class="w-full border px-3 py-2 rounded-md text-sm"
+              rows="4"
+            />
+          </div>
+          <button
+            class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition disabled:bg-gray-400 text-sm sm:text-base"
+            type="submit"
+          >
+            Create Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

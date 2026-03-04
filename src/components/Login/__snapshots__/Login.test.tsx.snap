@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Login snapshot for Login 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex justify-center items-center min-h-screen p-2 bg-blue-50"
+      >
+        <form
+          class="w-full max-w-xs sm:w-80 p-4 sm:p-6 border border-gray-300 rounded-lg bg-white shadow-sm"
+        >
+          <h2
+            class="text-center text-xl sm:text-2xl font-semibold mb-4 sm:mb-5 text-blue-800"
+          >
+            Login
+          </h2>
+          <label
+            class="block text-xs sm:text-sm font-medium mb-1"
+          >
+            Username
+          </label>
+          <input
+            class="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 sm:mb-4 focus:outline-none focus:ring focus:ring-blue-300 text-sm"
+            required=""
+            value=""
+          />
+          <label
+            class="block text-xs sm:text-sm font-medium mb-1"
+          >
+            Password
+          </label>
+          <input
+            class="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 sm:mb-4 focus:outline-none focus:ring focus:ring-blue-300 text-sm"
+            required=""
+            type="password"
+            value=""
+          />
+          <button
+            class="w-full py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-all text-sm sm:text-base"
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex justify-center items-center min-h-screen p-2 bg-blue-50"
+    >
+      <form
+        class="w-full max-w-xs sm:w-80 p-4 sm:p-6 border border-gray-300 rounded-lg bg-white shadow-sm"
+      >
+        <h2
+          class="text-center text-xl sm:text-2xl font-semibold mb-4 sm:mb-5 text-blue-800"
+        >
+          Login
+        </h2>
+        <label
+          class="block text-xs sm:text-sm font-medium mb-1"
+        >
+          Username
+        </label>
+        <input
+          class="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 sm:mb-4 focus:outline-none focus:ring focus:ring-blue-300 text-sm"
+          required=""
+          value=""
+        />
+        <label
+          class="block text-xs sm:text-sm font-medium mb-1"
+        >
+          Password
+        </label>
+        <input
+          class="w-full px-3 py-2 border border-gray-300 rounded-md mb-3 sm:mb-4 focus:outline-none focus:ring focus:ring-blue-300 text-sm"
+          required=""
+          type="password"
+          value=""
+        />
+        <button
+          class="w-full py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-all text-sm sm:text-base"
+          type="submit"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
