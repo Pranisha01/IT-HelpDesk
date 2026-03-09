@@ -85,83 +85,9 @@ exports[`ListPage snapshot for ListPage 1`] = `
             />
           </div>
           <div
-            class="bg-white shadow overflow-x-auto"
+            class="text-center py-6 text-blue-600 font-semibold"
           >
-            <table
-              class="min-w-full text-left border-collapse text-sm sm:text-base rounded-md"
-            >
-              <thead>
-                <tr
-                  class="bg-blue-100"
-                >
-                  <th
-                    class="p-3 border"
-                  >
-                    Title
-                  </th>
-                  <th
-                    class="p-3 border"
-                  >
-                    Priority
-                  </th>
-                  <th
-                    class="p-3 border"
-                  >
-                    Status
-                  </th>
-                  <th
-                    class="p-3 border"
-                  >
-                    Actions
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td
-                    class="text-center py-6 text-red-500 font-semibold"
-                    colspan="4"
-                  >
-                    No requests found
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div
-            class="flex flex-col sm:flex-row items-center justify-between gap-2 mt-4 sm:mt-6"
-          >
-            <button
-              class="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 w-full sm:w-auto"
-              disabled=""
-            >
-              ◀ Prev
-            </button>
-            <span
-              class="font-medium text-sm sm:text-base"
-            >
-              Page 
-              1
-               of 
-              1
-            </span>
-            <button
-              class="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 w-full sm:w-auto"
-              disabled=""
-            >
-              Next ▶
-            </button>
-          </div>
-          <div
-            class="mt-4 sm:mt-6 flex justify-end"
-          >
-            <a
-              class="block w-full sm:w-auto px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center transition-all"
-              data-discover="true"
-              href="/new"
-            >
-              + New Request
-            </a>
+            Loading requests...
           </div>
         </div>
       </div>
@@ -248,83 +174,9 @@ exports[`ListPage snapshot for ListPage 1`] = `
           />
         </div>
         <div
-          class="bg-white shadow overflow-x-auto"
+          class="text-center py-6 text-blue-600 font-semibold"
         >
-          <table
-            class="min-w-full text-left border-collapse text-sm sm:text-base rounded-md"
-          >
-            <thead>
-              <tr
-                class="bg-blue-100"
-              >
-                <th
-                  class="p-3 border"
-                >
-                  Title
-                </th>
-                <th
-                  class="p-3 border"
-                >
-                  Priority
-                </th>
-                <th
-                  class="p-3 border"
-                >
-                  Status
-                </th>
-                <th
-                  class="p-3 border"
-                >
-                  Actions
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td
-                  class="text-center py-6 text-red-500 font-semibold"
-                  colspan="4"
-                >
-                  No requests found
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          class="flex flex-col sm:flex-row items-center justify-between gap-2 mt-4 sm:mt-6"
-        >
-          <button
-            class="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 w-full sm:w-auto"
-            disabled=""
-          >
-            ◀ Prev
-          </button>
-          <span
-            class="font-medium text-sm sm:text-base"
-          >
-            Page 
-            1
-             of 
-            1
-          </span>
-          <button
-            class="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 w-full sm:w-auto"
-            disabled=""
-          >
-            Next ▶
-          </button>
-        </div>
-        <div
-          class="mt-4 sm:mt-6 flex justify-end"
-        >
-          <a
-            class="block w-full sm:w-auto px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-center transition-all"
-            data-discover="true"
-            href="/new"
-          >
-            + New Request
-          </a>
+          Loading requests...
         </div>
       </div>
     </div>

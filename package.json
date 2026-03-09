@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "api": "json-server --watch db.json --port 3001",
+    "api": "https://69a7f1e337caab4b8c602ab2.mockapi.io/api",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
     "test": "jest"
@@ -18,6 +18,7 @@
     "axios": "^1.13.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-hot-toast": "^2.6.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.13.0"
   },
@@ -36,6 +37,7 @@
     "autoprefixer": "^10.4.24",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",

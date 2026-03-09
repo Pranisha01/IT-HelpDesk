@@ -44,7 +44,7 @@ export interface CreateRequestInput {
   description: string;
 }
 
-export interface PatchStatusInput {
+export interface UpdateStatusInput {
   id: string | number;
   status: Status;
 }
@@ -99,7 +99,7 @@ function readTotalCount(
 export class RequestsService {
   private http: AxiosInstance;
 
-  constructor(baseURL = "http://localhost:3001") {
+  constructor(baseURL = "https://69a7f1e337caab4b8c602ab2.mockapi.io/api") {
     this.http = axios.create({ baseURL });
   }
 
@@ -139,6 +139,7 @@ export class RequestsService {
         attachments: [],
       };
       const res = await this.http.post<HelpdeskRequest>("/requests", payload);
+      console.log("res.data", res.data);
       return res.data;
     } catch (error) {
       console.log("json-server :: createRequest :: error", error);
@@ -150,11 +151,11 @@ export class RequestsService {
 
   async updateRequest(
     id: string | number,
-    patch: Partial<Omit<HelpdeskRequest, "id" | "createdAt">>,
+    put: Partial<Omit<HelpdeskRequest, "id" | "createdAt">>,
   ): Promise<HelpdeskRequest | null> {
     try {
-      const res = await this.http.patch<HelpdeskRequest>(`/requests/${id}`, {
-        ...patch,
+      const res = await this.http.put<HelpdeskRequest>(`/requests/${id}`, {
+        ...put,
         updatedAt: new Date().toISOString(),
       });
       return res.data;
@@ -169,9 +170,9 @@ export class RequestsService {
   async updateRequestStatus({
     id,
     status,
-  }: PatchStatusInput): Promise<HelpdeskRequest | null> {
+  }: UpdateStatusInput): Promise<HelpdeskRequest | null> {
     try {
-      const res = await this.http.patch<HelpdeskRequest>(`/requests/${id}`, {
+      const res = await this.http.put<HelpdeskRequest>(`/requests/${id}`, {
         status,
         updatedAt: new Date().toISOString(),
       });
@@ -217,7 +218,12 @@ export class RequestsService {
         params,
       });
       console.log(res, "response");
-      return { items: res.data, total: readTotalCount(res.headers as any) };
+      return {
+        items: res.data,
+        total: readTotalCount(
+          res.headers as Record<string, string | number | boolean | undefined>,
+        ),
+      };
     } catch (error) {
       console.log("json-server :: listRequests :: error", error);
       return { items: [], total: 0 };

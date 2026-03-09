@@ -4,12 +4,16 @@ import requestsService from "../../services/RequestsService";
 
 type RequestStatus = "Open" | "In Progress" | "Resolved" | "Closed";
 
+type Priority = "Low" | "Medium" | "High" | "Urgent";
+
+type Category = "Hardware" | "Software" | "Network" | "Access";
+
 interface Request {
   id: string | number;
   title: string;
   status: RequestStatus;
-  priority: string;
-  category: string;
+  priority: Priority;
+  category: Category;
   requester: string;
   description: string;
   createdAt: string;
@@ -71,8 +75,8 @@ export default function DetailsPage() {
     if (!request) return;
     setUpdating(true);
     const updated = await requestsService.updateRequest(request.id, {
-      priority: editFields.priority as any,
-      category: editFields.category as any,
+      priority: editFields.priority as Priority,
+      category: editFields.category as Category,
       description: editFields.description,
     });
     if (updated) {
@@ -102,14 +106,26 @@ export default function DetailsPage() {
 
     setUpdating(true);
 
-    const updated = await requestsService.updateRequestStatus({
-      id: request.id,
-      status: nextStatus as RequestStatus,
-    });
-    console.log("Status update response:", updated);
-    setRequest(updated);
+    try {
+      const updated = await requestsService.updateRequestStatus({
+        id: request.id,
+        status: nextStatus as RequestStatus,
+      });
+      console.log("Status update response:", updated);
 
-    setUpdating(false);
+      if (updated) {
+        setRequest(updated);
+        console.log("Status updated successfully to:", nextStatus);
+      } else {
+        console.error("Failed to update status: No response from server");
+        alert("Failed to update status. Please try again.");
+      }
+    } catch (error) {
+      console.error("Status update error:", error);
+      alert("Error updating status. Please try again.");
+    } finally {
+      setUpdating(false);
+    }
   }
 
   if (loading) {

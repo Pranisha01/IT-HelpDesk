@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import requestsService, {
   type Category,
   type Priority,
@@ -39,9 +40,14 @@ export default function NewRequest() {
     setLoading(false);
 
     if (!newRequest) {
-      setError("Failed to create request. Try again.");
+      const errorMsg = "Failed to create request. Try again.";
+      setError(errorMsg);
+      toast.error(errorMsg);
       return;
     }
+
+    // Show success toast
+    toast.success("Request created successfully!");
 
     // Redirect to ListPage
     navigate("/requests");
